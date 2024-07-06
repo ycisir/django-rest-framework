@@ -1,7 +1,6 @@
 from api.models import Student
 from api.serializers import StudentSerializer
 from django.http import HttpResponse, JsonResponse
-import io
 
 # Model object - single object
 def student_detail(request, pk):
