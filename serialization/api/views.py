@@ -1,10 +1,6 @@
-from django.shortcuts import render
 from api.models import Student
 from api.serializers import StudentSerializer
-from rest_framework.renderers import JSONRenderer
-from rest_framework.parsers import JSONParser
 from django.http import HttpResponse, JsonResponse
-from django.views import View
 import io
 
 # Model object - single object
