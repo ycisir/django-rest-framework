@@ -1,4 +1,4 @@
-# 3rd party python application that get data using our api
+# 3rd party python application that GET data using our api
 # make sure your server is running
 # sending backend data to frontend in json type
 
