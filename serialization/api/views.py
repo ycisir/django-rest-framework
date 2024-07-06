@@ -27,17 +27,3 @@ def student_list(request):
     # json_data = JSONRenderer().render(serializer.data)
     # return HttpResponse(json_data, content_type='application/json')
     return JsonResponse(serializer.data, safe=False)
-
-
-class StudentCreate(View):
-    def post(self, request):
-        json_data = request.body
-        stream = io.BytesIO(json_data)
-        python_data = JSONParser.parse(stream)
-        serializer = StudentSerializer(python_data)
-        if serializer.is_valid():
-            serializer.save()
-            res = {'msg': 'Data created'}
-            return JsonResponse(res.data)
-        else:
-            
