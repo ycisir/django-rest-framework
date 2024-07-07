@@ -4,5 +4,9 @@ from api import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('student/', views.student_api),
+    # function based view
+    # path('student/', views.student_api),
+
+    # class based view
+    path('student/', views.StudentAPI.as_view())
 ]

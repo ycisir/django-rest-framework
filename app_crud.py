@@ -14,4 +14,45 @@ def get_data(id=None):
     data = req.json()
     print(data)
 
-get_data(1)
+# get_data()
+get_data(3)
+
+
+def post_data():
+    data = {
+        'name': 'Ron Weasely',
+        'roll': 18,
+        'city': 'The Burrow'
+    }
+
+    json_data = json.dumps(data)
+    req = requests.post(url=URL, data=json_data)
+    data = req.json()
+    print(data)
+
+# post_data()
+
+
+def update_data():
+    data = {
+        'id': 5,
+        'name':'Luna Lovegood',
+    }
+
+    json_data = json.dumps(data)
+    req = requests.put(url=URL, data=json_data)
+    data = req.json()
+    print(data)
+
+# update_data()
+
+
+def delete_data():
+    data = {'id': 6}
+
+    json_data = json.dumps(data)
+    req = requests.delete(url=URL, data=json_data)
+    data = req.json()
+    print(data)
+
+# delete_data()
