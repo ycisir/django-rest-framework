@@ -15,14 +15,14 @@ def get_data(id=None):
     print(data)
 
 # get_data()
-get_data(3)
+# get_data(3)
 
 
 def post_data():
     data = {
-        'name': 'Ron Weasely',
-        'roll': 18,
-        'city': 'The Burrow'
+        'name': 'Yasir',
+        'roll': 11,
+        'city': 'Nagpur'
     }
 
     json_data = json.dumps(data)
@@ -30,7 +30,7 @@ def post_data():
     data = req.json()
     print(data)
 
-# post_data()
+post_data()
 
 
 def update_data():
