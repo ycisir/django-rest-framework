@@ -8,5 +8,5 @@ urlpatterns = [
     # path('student/', views.student_api),
 
     # class based view
-    path('student/', views.StudentAPI.as_view())
+    path('student-api/', views.StudentAPI.as_view())
 ]

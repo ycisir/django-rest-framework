@@ -1,5 +1,5 @@
 """
-URL configuration for model_serializer project.
+URL configuration for func_based_api project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.2/topics/http/urls/
@@ -20,5 +20,5 @@ from api import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('student-api/', views.StudentAPI.as_view())
+    path('student-api/', views.hello),
 ]
